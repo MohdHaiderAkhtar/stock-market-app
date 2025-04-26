@@ -8,7 +8,7 @@ from sklearn.metrics import mean_squared_error
 from transformers import pipeline
 import plotly.graph_objects as go
 
-# Initialize BERT sentiment analysis pipeline
+# Download the model locally
 sentiment_analyzer = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english")
 
 # API keys
