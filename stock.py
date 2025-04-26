@@ -9,7 +9,7 @@ from transformers import pipeline
 import plotly.graph_objects as go
 
 # Initialize BERT sentiment analysis pipeline
-sentiment_analyzer = pipeline("sentiment-analysis")
+sentiment_analyzer = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english")
 
 # API keys
 NEWS_API_KEY = "your_newsapi_key"
